@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-27 01:02:41 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC04UDdVNU04OzIwMjQtMDctMjc7IjEyOjMyOjM2ICI7MzQ0Mw=="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC04UDdVNU04OzIwMjQtMDctMjc7IjAxOjAyOjQxICI7MTE7MzU5MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sobra" type="Real" array="False" size=""/>
+            <comment text="Vai Declarar Impar."/>
+            <declare name="N&#250;mero" type="Integer" array="False" size=""/>
+            <comment text="Vai Declarar Par."/>
+            <output expression="&quot;Escreva o n&#250;mero desejado.&quot;" newline="True"/>
+            <input variable="N&#250;mero"/>
+            <if expression="N&#250;mero%2=0">
+                <then>
+                    <output expression="&quot;Este n&#250;mero &#233; Par.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Este N&#250;mero &#233; impar.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
