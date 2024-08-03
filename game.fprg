@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 02:36:16 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC04UDdVNU04OzIwMjQtMDgtMDM7IjEyOjEwOjM2ICI7MzQzNA=="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC04UDdVNU04OzIwMjQtMDgtMDM7IjAyOjM2OjE2ICI7MTszNTQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="resposta" type="Real" array="False" size=""/>
+            <output expression="&quot;Bem Vindo ao Game.&quot;" newline="True"/>
+            <output expression="&quot;Voce esta pronto?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Level 01&quot;" newline="True"/>
+            <assign variable="resposta" expression="7*56"/>
+            <output expression="&quot;Quanto &#233; 7*56&quot;" newline="True"/>
+            <input variable="resposta"/>
+            <if expression="resposta=392">
+                <then>
+                    <output expression="&quot;Level 02&quot;" newline="True"/>
+                    <output expression="&quot;Quanto &#233; 85*8&quot;" newline="True"/>
+                    <assign variable="resposta" expression="85*8"/>
+                    <input variable="resposta"/>
+                    <if expression="resposta=680">
+                        <then>
+                            <output expression="&quot;Level 03&quot;" newline="True"/>
+                            <output expression="&quot;Quanto &#233; 12*3?&quot;" newline="True"/>
+                            <assign variable="resposta" expression="12*3"/>
+                            <input variable="resposta"/>
+                            <if expression="resposta=36">
+                                <then>
+                                    <output expression="&quot;Level 04&quot;" newline="True"/>
+                                    <output expression="&quot;Quanto &#233; 60*3&quot;" newline="True"/>
+                                    <assign variable="resposta" expression="60*3"/>
+                                    <input variable="resposta"/>
+                                    <if expression="resposta=180">
+                                        <then>
+                                            <output expression="&quot;Parabens voce ganhou!!!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Game Over.&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Game Over.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Game Over.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Game Over.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
