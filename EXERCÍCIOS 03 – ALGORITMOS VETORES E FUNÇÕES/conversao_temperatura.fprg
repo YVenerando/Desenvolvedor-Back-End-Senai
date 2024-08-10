@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 05:19:31 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7U041MTItMTI0Mjk4MTsyMDI0LTA4LTAzOyIxMTo0OTowNiAiOzMxMTg="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7U041MTItMTI0Mjk4MTsyMDI0LTA4LTAzOyIxMjoyNjozNyAiOzE7MzIyNg=="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC1NTzVBRjdTOzIwMjQtMDgtMDM7IjA1OjE5OjMxICI7MjszNTY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="far, temperatura" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite um valor de temperatura em  FAHRENHEIT&quot;" newline="True"/>
+            <input variable="far"/>
+            <assign variable="temperatura" expression="celsius(far)"/>
+            <output expression="temperatura" newline="True"/>
+        </body>
+    </function>
+    <function name="celsius" type="Real" variable="temperatura">
+        <parameters>
+            <parameter name="far" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="temperatura" type="Real" array="False" size=""/>
+            <assign variable="temperatura" expression="(far-32)/1.8"/>
+        </body>
+    </function>
+</flowgorithm>

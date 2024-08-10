@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-05 06:44:15 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7U041MTQtMTI0Mjk3OTsyMDI0LTA4LTAzOyIwNDo1MDowNCAiOzMxMTk="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7U041MTQtMTI0Mjk3OTsyMDI0LTA4LTAzOyIwNToyMTozMSAiOzI7MzIyNw=="/>
+        <attribute name="edited" value="TWF0ZXVzO0RFU0tUT1AtMzJQR1U3QjsyMDI0LTA4LTA1OyIwNjo0NDoxNSAiOzM7Mjk3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#227;o das vari&#225;veis em forma de vetores"/>
+            <declare name="nomeProduto" type="String" array="True" size="3"/>
+            <declare name="custoProduto, precoProduto, lucroProduto" type="Real" array="True" size="3"/>
+            <comment text="Declara&#231;&#227;o vari&#225;vel inteira para fazer contagem de looping"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <comment text="Looping inicial para receber dados dos produtos"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <output expression="&quot;Informe o nome do Produto&quot;" newline="True"/>
+                <input variable="nomeProduto[i]"/>
+                <output expression="&quot;Informe o custo do produto: &quot;" newline="True"/>
+                <input variable="custoProduto[i]"/>
+                <output expression="&quot;Informe o pre&#231;o do produto: &quot;" newline="True"/>
+                <input variable="precoProduto[i]"/>
+                <comment text="Calculo para obter valor da margem de lucro do produto."/>
+                <assign variable="lucroProduto[i]" expression="((precoProduto[i]-custoProduto[i])/precoProduto[i])*100"/>
+            </for>
+            <comment text="Lopping para impress&#227;o dos dados recebidos"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <output expression="1+i&amp;&quot; Produto: &quot;&amp;nomeProduto[i]" newline="True"/>
+                <output expression="1+i&amp;&quot; Custo produto: R$ &quot;&amp;custoProduto[i]" newline="True"/>
+                <output expression="1+i&amp;&quot; Pre&#231;o de venda do produto: R$ &quot;&amp;precoProduto[i]" newline="True"/>
+                <output expression="1+i&amp;&quot; Margem de ucro produto: &quot;&amp;lucroProduto[i]&amp;&quot;%&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
